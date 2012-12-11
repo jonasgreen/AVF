@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BuildJarProjectSettings">
+    <option name="BUILD_JARS_ON_MAKE" value="false" />
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" />
+    <option name="OPTION_SCOPE" value="protected" />
+    <option name="OPTION_HIERARCHY" value="true" />
+    <option name="OPTION_NAVIGATOR" value="true" />
+    <option name="OPTION_INDEX" value="true" />
+    <option name="OPTION_SEPARATE_INDEX" value="true" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
+    <option name="OPTION_DEPRECATED_LIST" value="true" />
+    <option name="OTHER_OPTIONS" value="" />
+    <option name="HEAP_SIZE" />
+    <option name="LOCALE" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+  </component>
+  <component name="ModuleEditorState">
+    <option name="LAST_EDITED_MODULE_NAME" />
+    <option name="LAST_EDITED_TAB_NAME" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state />
+    </entry>
+  </component>
+  <component name="ProjectKey">
+    <option name="state" value="project://default" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="JavaSE-1.6" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ScalaProjectSettings">
+    <option name="importsWithPrefix">
+      <array>
+        <option value="exclude:scala.collection.mutable.ArrayBuffer" />
+        <option value="exclude:scala.collection.mutable.ListBuffer" />
+        <option value="java.util.AbstractCollection" />
+        <option value="java.util.AbstractList" />
+        <option value="java.util.AbstractMap" />
+        <option value="java.util.AbstractQueue" />
+        <option value="java.util.AbstractSequentialList" />
+        <option value="java.util.AbstractSet" />
+        <option value="java.util.ArrayDeque" />
+        <option value="java.util.ArrayList" />
+        <option value="java.util.Arrays" />
+        <option value="java.util.BitSet" />
+        <option value="java.util.Collection" />
+        <option value="java.util.Deque" />
+        <option value="java.util.EnumMap" />
+        <option value="java.util.EnumSet" />
+        <option value="java.util.Enumeration" />
+        <option value="java.util.Hahtable" />
+        <option value="java.util.HashMap" />
+        <option value="java.util.HashSet" />
+        <option value="java.util.IdentityHashMap" />
+        <option value="java.util.Iterator" />
+        <option value="java.util.LikedHashSet" />
+        <option value="java.util.LinkedHashMap" />
+        <option value="java.util.LinkedList" />
+        <option value="java.util.List" />
+        <option value="java.util.ListIterator" />
+        <option value="java.util.Map" />
+        <option value="java.util.NavigableMap" />
+        <option value="java.util.NavigableSet" />
+        <option value="java.util.Queue" />
+        <option value="java.util.Set" />
+        <option value="java.util.SortedMap" />
+        <option value="java.util.SortedSet" />
+        <option value="java.util.Stack" />
+        <option value="java.util.SubList" />
+        <option value="java.util.TreeMap" />
+        <option value="java.util.TreeSet" />
+        <option value="java.util.Vector" />
+        <option value="java.util.WeakHashMap" />
+        <option value="scala.collection.mutable._" />
+      </array>
+    </option>
+  </component>
+</project>
+
