@@ -2,28 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26402eab-4098-49cc-84ea-cc8497391499" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AVF.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/ChangeTargetSplitCommandMeta.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/model/Meta.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/model/MetaCollection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/model/MetaCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/model/MetaList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/model/MetaMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/model/MetaValue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/model/Model.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/model/ModelComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/model/ModelCompositeList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/model/ModelId.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/TargetFundSplit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/TargetFundSplitCollection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/model/TargetFundSplitMeta.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/ui/CommandFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/ui/DataChangedEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/ui/DataChangedHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/ui/HasData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/avf/client/ui/InputFieldManager.java" />
     </list>
     <ignored path="AVF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355224414803" ignored="false" />
+    <file path="/Dummy.txt" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355404230004" ignored="false" />
     <file path="/GreetingServiceImpl.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355145813008" ignored="false" />
     <file path="/Meta.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355229589024" ignored="false" />
-    <file path="/fragment.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355224929343" ignored="false" />
+    <file path="/fragment.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355410006578" ignored="false" />
     <file path="/MetaComposite.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355226601197" ignored="false" />
     <file path="/MetaValue.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355226524383" ignored="false" />
     <file path="/MetaList.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355146461672" ignored="false" />
@@ -40,6 +30,10 @@
     <file path="/MetaCollection.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355226576014" ignored="false" />
     <file path="/MetaMap.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355226598256" ignored="false" />
     <file path="/TargetFundSplitCollection.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355229325461" ignored="false" />
+    <file path="/HasData.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355408515449" ignored="false" />
+    <file path="/DataChanged.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355407001945" ignored="false" />
+    <file path="/DataChangedEvent.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355406959074" ignored="false" />
+    <file path="/InputFieldManager.java" changelist="26402eab-4098-49cc-84ea-cc8497391499" time="1355410042808" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +48,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -90,6 +82,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -103,46 +97,6 @@
         <entry file="file://$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/TargetFundSplitCollection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="71" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Meta.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/Meta.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="24" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MetaValue.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaValue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="5" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TargetFundSplit.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/TargetFundSplit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModelComposite.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/ModelComposite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,18 +106,6 @@
         <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaMap.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="3" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#232#238#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MetaCollection.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaCollection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="46" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -172,25 +114,70 @@
       <file leaf-file-name="MetaCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="34" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+            <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChangeTargetSplitCommandMeta.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ChangeTargetSplitCommandMeta.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/ChangeTargetSplitCommandMeta.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="45" selection-start="861" selection-end="861" vertical-scroll-proportion="0.62608695">
+            <state line="11" column="0" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GreetingServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/avf/server/GreetingServiceImpl.java">
+      <file leaf-file-name="HasData.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/avf/client/ui/HasData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="29" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+            <state line="9" column="28" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandFactory.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/avf/client/ui/CommandFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="4" selection-start="73" selection-end="73" vertical-scroll-proportion="0.12978986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InputFieldManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/avf/client/ui/InputFieldManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModelComposite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/ModelComposite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="11" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataChangedEvent.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/avf/client/ui/DataChangedEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="31" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataChangedHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/avf/client/ui/DataChangedHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,17 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/avf/server/GreetingServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/avf/client/AVF.java" />
-        <option value="$PROJECT_DIR$/src/com/avf/client/model/ModelId.java" />
-        <option value="$PROJECT_DIR$/src/com/avf/client/model/Model.java" />
-        <option value="$PROJECT_DIR$/src/com/avf/client/model/ModelList.java" />
-        <option value="$PROJECT_DIR$/src/com/avf/client/model/ModelContainer.java" />
-        <option value="$PROJECT_DIR$/src/com/avf/client/model/ModelComposite.java" />
-        <option value="$PROJECT_DIR$/src/com/avf/client/model/Commands.java" />
-        <option value="$PROJECT_DIR$/src/com/avf/client/model/UpdateTarget.java" />
-        <option value="$PROJECT_DIR$/src/com/avf/client/model/TargetFundSplitMeta.java" />
-        <option value="$PROJECT_DIR$/src/com/avf/client/model/ChangeTargetSplitCommandMeta.java" />
         <option value="$PROJECT_DIR$/src/com/avf/client/model/MetaComposite.java" />
         <option value="$PROJECT_DIR$/src/com/avf/client/model/MetaCommand.java" />
         <option value="$PROJECT_DIR$/src/com/avf/client/model/MetaCollection.java" />
@@ -236,14 +212,19 @@
         <option value="$PROJECT_DIR$/src/com/avf/client/model/MetaValue.java" />
         <option value="$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/TargetFundSplitCollection.java" />
         <option value="$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/ChangeTargetSplitCommandMeta.java" />
+        <option value="$PROJECT_DIR$/src/com/avf/client/ui/DataChangedEvent.java" />
+        <option value="$PROJECT_DIR$/src/com/avf/client/ui/DataChanged.java" />
+        <option value="$PROJECT_DIR$/src/com/avf/client/ui/HasData.java" />
+        <option value="$PROJECT_DIR$/src/com/avf/client/ui/InputFieldManager.java" />
+        <option value="$PROJECT_DIR$/src/com/avf/client/ui/CommandFactory.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="101" />
+    <option name="x" value="4" />
     <option name="y" value="22" />
     <option name="width" value="1579" />
-    <option name="height" value="1028" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -271,7 +252,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -291,8 +271,101 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AVF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AVF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AVF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AVF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AVF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AVF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AVF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AVF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,11 +383,12 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.avf.client.ui" />
       <recent name="com.avf.client.metacommands.changetargetsplit" />
       <recent name="com.avf.client.model" />
     </key>
@@ -411,13 +485,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="101" y="22" width="1579" height="1028" extended-state="0" />
+    <frame x="4" y="22" width="1579" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -427,10 +500,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24983692" sideWeight="0.6709539" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24952501" sideWeight="0.6709539" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -491,166 +565,7 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#222#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/ChangeTargetSplitCommandMeta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/TargetFundSplitMeta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#232#238#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/server/GreetingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/AVF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/Meta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/ModelCompositeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="15" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/ModelComposite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/ModelId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#222#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#232#238#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/server/GreetingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/server/GreetingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/AVF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/ModelId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/ModelCompositeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="15" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/TargetFundSplitMeta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/ModelComposite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
           <folding />
@@ -660,9 +575,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/TargetFundSplit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="14" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -697,35 +610,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="34" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="3" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#232#238#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/TargetFundSplitCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="71" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/avf/client/metacommands/changetargetsplit/ChangeTargetSplitCommandMeta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="45" selection-start="861" selection-end="861" vertical-scroll-proportion="0.62608695">
+        <state line="11" column="0" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/avf/client/ui/DataChangedEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/avf/client/ui/DataChangedHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/MetaCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/avf/client/ui/HasData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="28" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/avf/client/model/ModelComposite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/avf/client/ui/InputFieldManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/avf/client/ui/CommandFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="73" selection-end="73" vertical-scroll-proportion="0.12978986">
           <folding />
         </state>
       </provider>
