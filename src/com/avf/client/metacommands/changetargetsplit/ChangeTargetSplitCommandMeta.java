@@ -15,7 +15,7 @@ public class ChangeTargetSplitCommandMeta extends MetaCommand {
     public TargetFundSplitCollection targetFundSplitCollection = new TargetFundSplitCollection(this);
 
 
-    protected ChangeTargetSplitCommandMeta() {
+    public ChangeTargetSplitCommandMeta() {
         super("TargetSplitCommand", "com.schantz.foundation.command.TargetSplitCommand");
     }
 
