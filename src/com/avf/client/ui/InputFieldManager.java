@@ -1,8 +1,7 @@
 package com.avf.client.ui;
 
+import com.avf.client.model.CommandModel;
 import com.avf.client.model.Meta;
-import com.avf.client.model.MetaCommand;
-import com.avf.client.model.ModelComposite;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,17 +9,13 @@ import java.util.Map;
 /**
  *
  */
-public class InputFieldManager implements DataChangedHandler{
+public class InputFieldManager implements ValidationChangedHandler {
 
     private Map<Meta, HasData> bindingMap = new HashMap<Meta, HasData>();
-    private ModelComposite model;
-    private MetaCommand metaCommand;
-    //private Frame commandFrame; TODO
+    private CommandModel cmdModel;
 
-    public InputFieldManager(MetaCommand metaCmd) {
-        this.metaCommand = metaCmd;
-        this.model = new ModelComposite(metaCmd);
-
+    public InputFieldManager(CommandModel cmdModel) {
+        this.cmdModel = cmdModel;
     }
 
     public void bind(Meta metaKey, HasData hasData){
@@ -29,10 +24,7 @@ public class InputFieldManager implements DataChangedHandler{
     }
 
 
-
-
-
-    public void onChange(DataChangedEvent event) {
+    public void onChange() {
 
     }
 }
